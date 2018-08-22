@@ -6,6 +6,6 @@ body {
     border: 1px solid grey;
 }
 
-#test {
+.column {
     background: salmon;
 }
