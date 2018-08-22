@@ -1,0 +1,97 @@
+
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+//$color-primary
+/*.button,
+
+$off-wht: rgba(white,.4);
+
+%button
+    color: #FFFFFF
+    background: transparent
+    border: 1px solid $color-primary
+    padding: 15px 20px
+    width: 100%
+    font-size: 14px
+    font-family: Helvetica, Arial, sans-serif
+    font-weight: bold
+    text-transform: capitalize
+    display: inline-block
+    text-align: center
+    cursor: pointer
+    text-decoration: none
+    box-shadow: inset 0 0 0 0 $color-primary
+    -webkit-transition: all ease 0.3
+    -moz-transition: all ease 0.3
+    transition: all ease 0.3
+    &:focus,
+    &:hover
+        box-shadow: inset 0 50px 0 0 darken($color-primary, 15%)
+
+
+
+@mixin btn-theme($btn-color) 
+    border: 1px solid $btn-color
+    background: $btn-color
+    &:hover 
+        background: darken($btn-color, 15%);
+       	box-shadow: inset 0 50px 0 0 darken($btn-color,15%);
+
+    &:active
+        background: darken($btn-color, 15%)
+    @extend %button;
+
+
+
+
+// extend buttons
+.acura
+    @extend %button-acura
+.audi
+    @extend %button-audi
+.buick
+    @extend %button-buick
+.bmw
+    @extend %button-bmw
+.cadillac
+    @extend %button-cadillac
+.chevy
+    @extend %button-chevy
+.fiat
+    @extend %button-fiat
+.ford
+    @extend %button-ford
+.gmc
+    @extend %button-gmc
+.honda
+    @extend %button-honda
+.hyundai
+    @extend %button-hyundai
+.infiniti
+    @extend %button-infiniti
+.kia
+    @extend %button-kia
+.lexus
+    @extend %button-lexus
+.lincoln
+    @extend %button-lincoln
+.maserati
+    @extend %button-maserati
+.mazda
+    @extend %button-mazda
+.mini
+    @extend %button-mini
+.mb
+    @extend %button-mb
+.mitsubishi
+    @extend %button-mitsubishi
+.nissan
+    @extend %button-nissan
+.subaru
+    @extend %button-subaru
+.toyota
+    @extend %button-toyota
+.volvo
+    @extend %button-volvo
+.vw
+    @extend %button-vw
